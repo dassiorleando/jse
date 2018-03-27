@@ -1,7 +1,6 @@
-import nullity.SDK;
-import nullity.SDKConfig;
+package nullity;
 
-public class Main {
+public class NullityProgram {
 
     public static void main(String[] args) {
         // Let's initiate our SDK config
