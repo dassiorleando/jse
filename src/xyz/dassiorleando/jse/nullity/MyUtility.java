@@ -1,7 +1,8 @@
-package nullity;
+package xyz.dassiorleando.jse.nullity;
 
 /**
  * Old approach I was using to throw an NPE with my proper utility
+ * @author dassiorleando
  */
 public class MyUtility {
 

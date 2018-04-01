@@ -1,4 +1,4 @@
-package nullity;
+package xyz.dassiorleando.jse.nullity;
 
 /**
  * Just to illustrate/simulate the sdk

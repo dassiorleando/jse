@@ -1,5 +1,8 @@
-package nullity;
+package xyz.dassiorleando.jse.nullity;
 
+/**
+ * @author dassiorleando
+ */
 public class NullityProgram {
 
     public static void main(String[] args) {
@@ -11,6 +14,8 @@ public class NullityProgram {
 
         // We build our sdk component
         SDK sdk = sdkConfig.build();
+
+        System.out.println(String.valueOf(sdk.sdkConfig2.getKey()));
     }
 
 }

@@ -1,4 +1,4 @@
-package nullity;
+package xyz.dassiorleando.jse.nullity;
 
 import java.util.Objects;
 
@@ -7,6 +7,7 @@ import java.util.Objects;
  */
 public class SDK {
     private SDKConfig sdkConfig;
+    public SDKConfig sdkConfig2;
 
     public SDK(SDKConfig sdkConfig){
         Objects.requireNonNull(sdkConfig, "SDK config is null");
