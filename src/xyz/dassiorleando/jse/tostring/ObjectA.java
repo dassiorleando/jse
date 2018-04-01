@@ -12,6 +12,30 @@ public class ObjectA {
         this.objectB1 = objectB1;
     }
 
+    public String getPropA() {
+        return propA;
+    }
+
+    public void setPropA(String propA) {
+        this.propA = propA;
+    }
+
+    public ObjectB getObjectB1() {
+        return objectB1;
+    }
+
+    public void setObjectB1(ObjectB objectB1) {
+        this.objectB1 = objectB1;
+    }
+
+    public ObjectB getObjectB2() {
+        return objectB2;
+    }
+
+    public void setObjectB2(ObjectB objectB2) {
+        this.objectB2 = objectB2;
+    }
+
     @Override
     public String toString() {
         return "ObjectA{" +
