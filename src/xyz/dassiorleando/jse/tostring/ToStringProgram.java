@@ -9,9 +9,9 @@ import java.util.Objects;
 public class ToStringProgram {
 
     public static void main(String[] args) {
-ObjectB objectB = new ObjectB("Fake propB");
-ObjectA objectA = new ObjectA("Fake propA", objectB);
+        ObjectB objectB = new ObjectB("Fake propB");
+        ObjectA objectA = new ObjectA("Fake propA", objectB);
 
-System.out.println(Objects.toString(objectA));
+        System.out.println(Objects.toString(objectA));
     }
 }
