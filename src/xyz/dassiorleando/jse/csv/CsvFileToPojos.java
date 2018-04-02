@@ -9,6 +9,7 @@ import java.util.stream.Collectors;
 
 /**
  * A simple line of code to loop through an entire csv file and convert it to a list of pojos
+ * @see <a href="http://www.dassiorleando.xyz/**"</a>
  * @author dassiorleando
  */
 public class CsvFileToPojos {
@@ -19,7 +20,7 @@ public class CsvFileToPojos {
                 .filter(line -> !line.startsWith("name,"))      // We skip the first line
                 .map(line -> {      // For each other line let's build a student object
                     List<String> row = Arrays.asList(line.split(","));
-                    return new Student(row.get(0), row.get(1), row.get(2));
+                    return new Student(row);
                 }).collect(Collectors.toList());
 
         // We output all the students details
