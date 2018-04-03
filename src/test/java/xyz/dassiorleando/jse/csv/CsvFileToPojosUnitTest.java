@@ -16,7 +16,7 @@ public class CsvFileToPojosUnitTest {
     @Test
     public void build() throws IOException {
         // We give the location of the csv file
-        List<Student> students = CsvFileToPojos.build("resources/dassi.csv");
+        List<Student> students = CsvFileToPojos.build("file.csv");
 
         // We output all the students details
         students.forEach(System.out::println);
