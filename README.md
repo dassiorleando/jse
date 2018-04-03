@@ -1,5 +1,5 @@
 # JSE
-## Some JavaSE goodies/tricks
+## Some JavaSE goodies/tricks + JUnit tests
 
 * [Nullity](https://github.com/dassiorleando/jse/tree/master/src/xyz/dassiorleando/jse/nullity)
 * [Safe toString](https://github.com/dassiorleando/jse/tree/master/src/xyz/dassiorleando/jse/tostring)

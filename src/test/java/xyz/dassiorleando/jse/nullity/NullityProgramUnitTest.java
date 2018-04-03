@@ -27,7 +27,7 @@ public class NullityProgramUnitTest {
 
     @Test(expected = NullPointerException.class)
     public void catchBadSDKConfig() {
-        // We instantiate an SDK with a bad config(no secret provided)
+        // We instantiate an SDK with bad configs(no secret provided)
         SDKConfig sdkConfig = new SDKConfig()
                 // .secret("my secret") -----> We don't send the secret
                 .key("my key")
