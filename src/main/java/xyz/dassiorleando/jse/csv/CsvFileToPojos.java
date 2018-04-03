@@ -14,16 +14,18 @@ import java.util.stream.Collectors;
  */
 public class CsvFileToPojos {
 
-    public static void main(String [] args) throws IOException {
-        // We give the location of the csv file
-        List<Student> students = Files.lines(Paths.get("resources/dassi.csv"))
+    /**
+     *
+     * @param filePath The location of the csv file
+     * @return the list of students(rows) contained in the file
+     * @throws IOException
+     */
+    public static List<Student> build(String filePath) throws IOException {
+        return Files.lines(Paths.get(filePath))
                 .filter(line -> !line.startsWith("name,"))      // We skip the first line
                 .map(line -> {      // For each other line let's build a student object
                     List<String> row = Arrays.asList(line.split(","));
                     return new Student(row);
                 }).collect(Collectors.toList());
-
-        // We output all the students details
-        students.forEach(System.out::println);
     }
 }
